@@ -1,0 +1,173 @@
+.homepage-section-01{
+    display: flex;
+    width: 100%;
+}
+
+.homepage-section-02{
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background-color: #F5F5F5;
+}
+
+.homepage-section-03{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+    background-color: #F5F5F5;
+}
+
+.homepage-section-04{
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background-color: #F5F5F5;
+}
+
+.homepage-section-05{
+    width: 100%;
+    height: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F5F5F5;
+}
+
+.homepage-section-01-left,.homepage-section-01-right{
+    flex: 5;
+}
+
+.homepage-section-01-left{
+    padding: 70px;
+}
+
+.tagline{
+    color: #9921E8;
+}
+
+.tagline-div{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: fit-content;
+    padding: 5px 20px;
+    margin: 20px 50px;
+    border-radius: 50px;
+}
+
+.tagline-2{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.tagline-2-div{
+    height: 78px;
+    width: 487px;
+    margin: 20px 50px;
+}
+
+span{
+    color: #FFFFFF;
+}
+
+.enroll-div{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: 50px 50px;
+    cursor: pointer;
+}
+
+.offer{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 136px;
+}
+
+.line{
+    background-color: white;
+    width: 32px;
+    height: 1px;
+    margin-left: 227px;
+    margin-top: 5px;
+}
+
+.timer{
+    width: 328px;
+    height: 89px;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.hrs,.mins,.sec{
+    height: 88px;
+    width: 88px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.mins{
+    margin: 0px 32px;
+}
+
+.course-intro{
+    font-size: 18px;
+    font-weight: 700;
+    color: #0D0D0D;
+    width: fit-content;
+    margin-left: 120px;
+}
+
+.carousel{
+    background-color: blanchedalmond;
+    width: 1440px;
+    height: 312px;
+    margin: 50px auto;
+}
+
+.email{
+    display: flex;
+    width: 1312px;
+    height: 120px;
+    background-color: #5F72BE;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.email-left,.email-right{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us{
+    background-color:#2D81F7;
+    border: none;
+    width: 328px;
+    height: 52px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Section-03-left{
+    flex: 1;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.Section-03-right{
+    flex: 2;
+    background-color: aqua;
+}
+
+.enroll-02{
+    border: 1px solid #5F72BE;
+    background-color: #F5F5F5;
+    color: #5F72BE;
+    width: 100%;
+}
