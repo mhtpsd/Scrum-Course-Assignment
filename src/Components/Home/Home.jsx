@@ -1,6 +1,49 @@
 import './home.css';
+import Carouselimage from '../../materials/Carousel-image.svg';
+import Bookmark from '../../materials/bookmark.svg';
+ import React, {useEffect, useRef, useState} from 'react'
 
 function Home(){
+      const [timerHours, setTimerHours] = useState('00');
+      const [timerMinutes, setTimerMinutes] = useState('00');
+      const [timerSeconds, setTimerSeconds] = useState('00');
+
+      let interval = useRef();
+
+      const startTimer = () => {
+            const countdownTime = new Date('July 10, 2022 17:00:00').getTime();
+
+            interval = setInterval(() => {
+                  const currentTime = new Date().getTime();
+                  const diff = countdownTime - currentTime;
+
+                  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)/(1000*60*60)));
+                  const minutes = Math.floor((diff % (1000 * 60 *60))/(1000*60));
+                  const seconds = Math.floor((diff % (1000*60))/1000);
+
+                  if(diff<0) {
+                        //stop timer
+                        clearInterval(interval.current);
+                  } else {
+                        //update Timer
+                        setTimerHours(hours);
+                        setTimerMinutes(minutes);
+                        setTimerSeconds(seconds);
+                  }
+            }, 1000);
+               
+      };
+
+      useEffect(() => {
+            startTimer();
+            const cl = clearInterval(interval.current);
+            return () => {
+                  <>
+                  {cl}
+                  </>
+            };
+      });
+
     return(
         <>
            <div className='homepage-section-01'>
@@ -17,10 +60,19 @@ function Home(){
                     <div>
                           <span className='offer'>10% OFF on all courses* | Offer Valid For</span>
                           <div className='line'></div>
-                          <div className='timer'>
-                               <div className='hrs'></div>
-                               <div className='mins'></div>
-                               <div className='sec'></div>
+                          <div className='countdown'>
+                               <div className='timer'>
+                                    <div className="time"><span style={{fontSize:"54px",fontWeight:"700",lineHeight:"65.5px"}}>{timerHours}</span></div>
+                                    <div className="time"><small style={{fontSize:"14px",fontWeight:"700",lineHeight:"16.98px",color:"#FFFFFF"}}>hrs.</small></div>
+                               </div>
+                               <div className='timer'>
+                                    <div className="time"><span style={{fontSize:"54px",fontWeight:"700",lineHeight:"65.5px"}}>{timerMinutes}</span></div>
+                                    <div className="time"><small style={{fontSize:"14px",fontWeight:"700",lineHeight:"16.98px",color:"#FFFFFF"}}>mins.</small></div>
+                               </div>
+                               <div className='timer'>
+                                    <div className="time"><span style={{fontSize:"54px",fontWeight:"700",lineHeight:"65.5px"}}>{timerSeconds}</span></div>
+                                    <div className="time"><small style={{fontSize:"14px",fontWeight:"700",lineHeight:"16.98px",color:"#FFFFFF"}}>sec.</small></div>
+                               </div>
                           </div>
                     </div>
                </div>
@@ -31,7 +83,112 @@ function Home(){
            <div className='homepage-section-02'>
                 <span className='course-intro'>A broad range of courses<br/></span>
                 <span style={{marginLeft: "120px",color: "#0D0D0D"}}>Choose from 100+ online video courses with new additions published every month</span>
-                <div className='carousel'></div>
+                
+                {/* Carousel */}
+                <div className='Carousel-01'>
+                      <div className="container">
+                        <div className="card">
+                              <div className="image">
+                                    <img
+                                         src={Carouselimage}
+                                         alt=""
+                                    />
+                              </div>
+                              <div className="content">
+                                    <div className="course-desc">
+                                          <div style={{width:"228px",height:"38px",marginLeft:"25px"}}>
+                                               <span style={{color:"#0D0D0D",fontSize:"16px",fontWeight:"700",lineHeight:"19.41px",}}>Learn SCRUM: The Complete Beginner Course</span>
+                                          </div>
+                                          <div>
+                                                <img src={Bookmark} alt=''/>
+                                          </div>
+                                    </div>
+                                    <div className="name">
+                                          <p style={{color: "#0D0D0D",fontWeight: "400",fontSize: "14px",lineHeight: "16.98px"}}>Samay Jain, Ex-KPMG</p>
+                                          </div>
+                                    <div className="rating"><p>4.5</p></div>
+                                    <div style={{width:"fit-content",marginLeft:"25px"}}>
+                                          <button className='enroll-03-button'>ENROLL NOW</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div className="card">
+                              <div className="image">
+                                    <img
+                                         src={Carouselimage}
+                                         alt=""
+                                    />
+                              </div>
+                              <div className="content">
+                                    <div className="course-desc">
+                                          <div style={{width:"228px",height:"38px",marginLeft:"25px"}}>
+                                               <span style={{color:"#0D0D0D",fontSize:"16px",fontWeight:"700",lineHeight:"19.41px",}}>Learn SCRUM: The Complete Beginner Course</span>
+                                          </div>
+                                          <div>
+                                                <img src={Bookmark} alt=''/>
+                                          </div>
+                                    </div>
+                                    <div className="name">
+                                          <p style={{color: "#0D0D0D",fontWeight: "400",fontSize: "14px",lineHeight: "16.98px"}}>Samay Jain, Ex-KPMG</p>
+                                          </div>
+                                    <div className="rating"><p>4.5</p></div>
+                                    <div style={{width:"fit-content",marginLeft:"25px"}}>
+                                          <button className='enroll-03-button'>ENROLL NOW</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div className="card">
+                              <div className="image">
+                                    <img
+                                         src={Carouselimage}
+                                         alt=""
+                                    />
+                              </div>
+                              <div className="content">
+                                    <div className="course-desc">
+                                          <div style={{width:"228px",height:"38px",marginLeft:"25px"}}>
+                                               <span style={{color:"#0D0D0D",fontSize:"16px",fontWeight:"700",lineHeight:"19.41px",}}>Learn SCRUM: The Complete Beginner Course</span>
+                                          </div>
+                                          <div>
+                                                <img src={Bookmark} alt=''/>
+                                          </div>
+                                    </div>
+                                    <div className="name">
+                                          <p style={{color: "#0D0D0D",fontWeight: "400",fontSize: "14px",lineHeight: "16.98px"}}>Samay Jain, Ex-KPMG</p>
+                                          </div>
+                                    <div className="rating"><p>4.5</p></div>
+                                    <div style={{width:"fit-content",marginLeft:"25px"}}>
+                                          <button className='enroll-03-button'>ENROLL NOW</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div className="card">
+                              <div className="image">
+                                    <img
+                                         src={Carouselimage}
+                                         alt=""
+                                    />
+                              </div>
+                              <div className="content">
+                                    <div className="course-desc">
+                                          <div style={{width:"228px",height:"38px",marginLeft:"25px"}}>
+                                               <span style={{color:"#0D0D0D",fontSize:"16px",fontWeight:"700",lineHeight:"19.41px",}}>Learn SCRUM: The Complete Beginner Course</span>
+                                          </div>
+                                          <div>
+                                                <img src={Bookmark} alt=''/>
+                                          </div>
+                                    </div>
+                                    <div className="name">
+                                          <p style={{color: "#0D0D0D",fontWeight: "400",fontSize: "14px",lineHeight: "16.98px"}}>Samay Jain, Ex-KPMG</p>
+                                          </div>
+                                    <div className="rating"><p>4.5</p></div>
+                                    <div style={{width:"fit-content",marginLeft:"25px"}}>
+                                          <button className='enroll-03-button'>ENROLL NOW</button>
+                                    </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
            </div>
            <div className='homepage-section-03'>
                <div className='Section-03-left'>
@@ -56,7 +213,39 @@ function Home(){
                         </div>
                         <div style={{backgroundColor:"#5F72BE",width:"435px",height:"2px",marginLeft:"200px"}}></div>
                   </div>
-                  <div></div>
+
+
+                  {/* Carousel */}
+
+                  <div className='Carousel-02'>
+                      <div className="container">
+                        <div className="card">
+                              <div className="image">
+                                    <img
+                                         src={Carouselimage}
+                                         alt=""
+                                    />
+                              </div>
+                              <div className="content">
+                                    <div className="course-desc">
+                                          <div style={{width:"228px",height:"38px",marginLeft:"25px"}}>
+                                               <span style={{color:"#0D0D0D",fontSize:"16px",fontWeight:"700",lineHeight:"19.41px",}}>Learn SCRUM: The Complete Beginner Course</span>
+                                          </div>
+                                          <div>
+                                                <img src={Bookmark} alt=''/>
+                                          </div>
+                                    </div>
+                                    <div className="name">
+                                          <p style={{color: "#0D0D0D",fontWeight: "400",fontSize: "14px",lineHeight: "16.98px"}}>Samay Jain, Ex-KPMG</p>
+                                          </div>
+                                    <div className="rating"><p>4.5</p></div>
+                                    <div style={{width:"fit-content",marginLeft:"25px"}}>
+                                          <button className='enroll-03-button'>ENROLL NOW</button>
+                                    </div>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
            </div>
            <div className='homepage-section-05'>
                  <div className='email'>
