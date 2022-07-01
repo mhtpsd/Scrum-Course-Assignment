@@ -50,6 +50,8 @@ function Home(){
             };
       });
 
+      
+
     return(
         <>
            <div className='homepage-section-01'>
@@ -102,9 +104,9 @@ function Home(){
                 <span style={{marginLeft: "120px",color: "#0D0D0D"}}>Choose from 100+ online video courses with new additions published every month</span>
                 
                 {/* Carousel */}
-                <div className='Carousel-01'>
-                      <div className="container">
-                        <div className="card">
+                <div className='swiper mySwiper Carousel-01'>
+                      <div className="swiper-wrapper container">
+                        <div className="swiper-slide card">
                               <div className="image">
                                     <img
                                          src={Carouselimage}
@@ -129,7 +131,7 @@ function Home(){
                                     </div>
                               </div>
                         </div>
-                        <div className="card">
+                        <div className="swiper-slide card">
                               <div className="image">
                                     <img
                                          src={Carouselimage}
@@ -154,7 +156,7 @@ function Home(){
                                     </div>
                               </div>
                         </div>
-                        <div className="card">
+                        <div className="swiper-slide card">
                               <div className="image">
                                     <img
                                          src={Carouselimage}
@@ -179,7 +181,7 @@ function Home(){
                                     </div>
                               </div>
                         </div>
-                        <div className="card">
+                        <div className="swiper-slide card">
                               <div className="image">
                                     <img
                                          src={Carouselimage}
@@ -204,7 +206,12 @@ function Home(){
                                     </div>
                               </div>
                         </div>
+                        
+                        <div style={{color:"rgba(13, 13, 13, 0.75)"}} className="swiper-button-next"></div>
+                        <div style={{color:"rgba(13, 13, 13, 0.75)"}} className="swiper-button-prev"></div>
+                        <div style={{color:"rgba(13, 13, 13, 0.75)"}} className="swiper-pagination"></div>
                       </div>
+                      
                 </div>
            </div>
            <div className='homepage-section-03'>
@@ -243,7 +250,7 @@ function Home(){
 
                   {/* Carousel */}
 
-                  <div className='Carousel-02'>
+                  <div className='swiper mySwiper Carousel-02'>
                       <div className="container-02">
                         <div className="card-02">
                               <div className="image-02">
@@ -265,6 +272,9 @@ function Home(){
                                     </div>
                               </div>
                         </div>
+                        <div style={{color:"rgba(13, 13, 13, 0.75)"}} className="swiper-button-next"></div>
+                        <div style={{color:"rgba(13, 13, 13, 0.75)"}} className="swiper-button-prev"></div>
+                        <div style={{color:"rgba(13, 13, 13, 0.75)"}} className="swiper-pagination"></div>
                       </div>
                   </div>
            </div>
