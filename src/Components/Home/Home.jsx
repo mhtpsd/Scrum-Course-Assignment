@@ -1,7 +1,13 @@
 import './home.css';
 import Carouselimage from '../../materials/Carousel-image.svg';
 import Bookmark from '../../materials/bookmark.svg';
- import React, {useEffect, useRef, useState} from 'react'
+import Person from '../../materials/person.svg';
+import Img1 from '../../materials/Img1.svg';
+import Img2 from '../../materials/Img2.svg';
+import Img3 from '../../materials/Img3.svg';
+import Img4 from '../../materials/Img4.svg';
+import Features from '../../materials/features.svg';
+import React, {useEffect, useRef, useState} from 'react'
 
 function Home(){
       const [timerHours, setTimerHours] = useState('00');
@@ -77,7 +83,18 @@ function Home(){
                     </div>
                </div>
                <div className='homepage-section-01-right'>
-
+                        <div className='img-1'>
+                              <img src={Img1} alt=""/>
+                        </div>
+                        <div className='img-2'>
+                              <img src={Img2} alt=""></img>
+                        </div>
+                        <div className='img-3'>
+                              <img src={Img3} alt=""></img>
+                        </div>
+                        <div className='img-4'>
+                              <img src={Img4} alt=""></img>
+                        </div>
                </div>
            </div>
            <div className='homepage-section-02'>
@@ -203,7 +220,16 @@ function Home(){
                   </div>
                </div>
                <div className='Section-03-right'>
-                     
+                    {/* <div className='section-03-right-01'>
+                           <img src="" alt="" />
+                           <img src="" alt="" />
+                           <img src="" alt="" />
+                     </div>
+                     <div className='section-03-right-02'>
+                           <img src="" alt="" />
+                           <img src="" alt="" />
+                     </div> */}
+                     <img src={Features} alt=''></img>
                </div>
            </div>
            <div className='homepage-section-04'>
@@ -218,29 +244,24 @@ function Home(){
                   {/* Carousel */}
 
                   <div className='Carousel-02'>
-                      <div className="container">
-                        <div className="card">
-                              <div className="image">
+                      <div className="container-02">
+                        <div className="card-02">
+                              <div className="image-02">
                                     <img
-                                         src={Carouselimage}
+                                         style={{width:"100%",height:"100%"}}
+                                         src={Person}
                                          alt=""
                                     />
                               </div>
-                              <div className="content">
-                                    <div className="course-desc">
-                                          <div style={{width:"228px",height:"38px",marginLeft:"25px"}}>
-                                               <span style={{color:"#0D0D0D",fontSize:"16px",fontWeight:"700",lineHeight:"19.41px",}}>Learn SCRUM: The Complete Beginner Course</span>
-                                          </div>
-                                          <div>
-                                                <img src={Bookmark} alt=''/>
-                                          </div>
+                              <div className="content-02">
+                                    <div className="course-desc-02">
+                                          <span style={{color:"#0D0D0D",fontSize:"18px",fontWeight:"400",lineHeight:"21.83px"}}>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</span>
                                     </div>
-                                    <div className="name">
-                                          <p style={{color: "#0D0D0D",fontWeight: "400",fontSize: "14px",lineHeight: "16.98px"}}>Samay Jain, Ex-KPMG</p>
-                                          </div>
-                                    <div className="rating"><p>4.5</p></div>
-                                    <div style={{width:"fit-content",marginLeft:"25px"}}>
-                                          <button className='enroll-03-button'>ENROLL NOW</button>
+                                    <div className="name-02">
+                                          <span style={{color:"#9921E8", fontSize:"16px",lineHeight:"100%",fontWeight:"700"}}>Md. Danish Ansari</span>
+                                    </div>
+                                    <div className="profession">
+                                          <span style={{color:"#9921E8", fontSize:"14px",lineHeight:"16.98px",fontWeight:"400"}}>Learner, Govt. Employee @UPPCL</span>
                                     </div>
                               </div>
                         </div>

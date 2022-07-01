@@ -49,12 +49,12 @@ function Footer(){
                                 <span style={{fontSize:"14px",fontWeight:"400",lineHeight:"24px"}}>Be the first one to know  about discounts, offers and events weekly in your mailbox. Unsubscribe whenever you like with one click.</span>
                              </div>
                              <div className='mail-newsletter'>
-                                    <div>
+                                    <div className='enter-mail'>
                                          <img src={SMS} alt="SMS"></img>
                                          <input placeholder='Enter your email'/>
                                     </div>
-                                    <div>
-                                         <button style={{border:"none"}}>Submit</button>
+                                    <div className='mail-submit'>
+                                         <button style={{border:"none",cursor:"pointer"}}>Submit</button>
                                     </div>
                              </div>
                        </div>
@@ -62,24 +62,24 @@ function Footer(){
                  <div className='Horz-line'></div>
                  <div className='Footer-bottom'>
                         <div className='Footer-bottom-content'>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>About US</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Jobs</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Blog</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Press</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>FAQ</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Careers</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Contact</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Privacy policy</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Sitemap</span>
-                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>Terms of Use</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>About US</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Jobs</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Blog</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Press</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>FAQ</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Careers</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Contact</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Privacy policy</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Sitemap</span>
+                            <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto",cursor:"pointer"}}>Terms of Use</span>
                         </div>
                         <div style={{display:"flex",width:"100%"}}>
                              <div style={{width:"50%"}}>
-                                  <img style={{margin:"10px",marginLeft:"25%"}} src={FB} alt='FB'></img>
-                                  <img style={{margin:"10px"}} src={YT} alt='YT'></img>
-                                  <img style={{margin:"10px"}} src={Dribble} alt='Dribble'></img>
-                                  <img style={{margin:"10px"}} src={Figma} alt='Figma'></img>
-                                  <img style={{margin:"10px"}} src={Whatsapp} alt='Whatsapp'></img>
+                                  <img style={{margin:"10px",marginLeft:"25%",cursor:"pointer"}} src={FB} alt='FB'></img>
+                                  <img style={{margin:"10px",cursor:"pointer"}} src={YT} alt='YT'></img>
+                                  <img style={{margin:"10px",cursor:"pointer"}} src={Dribble} alt='Dribble'></img>
+                                  <img style={{margin:"10px",cursor:"pointer"}} src={Figma} alt='Figma'></img>
+                                  <img style={{margin:"10px",cursor:"pointer"}} src={Whatsapp} alt='Whatsapp'></img>
                              </div>
                              <div style={{width:"50%",display:"flex"}}>
                               <span style={{color:"#8C8C8C",fontSize:"14px",fontWeight:"400",lineHeight:"18.12px",margin:"auto"}}>© 2000-2021, All Rights Reserved</span>

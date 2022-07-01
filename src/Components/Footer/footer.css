@@ -78,3 +78,17 @@ button{
     height: 18px;
     margin: 30px 150px;
 }
+
+.mail-submit{
+    width: 94px;
+    height: 36px;
+    margin: auto;
+    margin-left: 250px;
+}
+
+.enter-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

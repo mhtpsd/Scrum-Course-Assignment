@@ -6,7 +6,7 @@
 .homepage-section-02{
     width: 100%;
     height: 500px;
-    padding-top: 50px;
+    padding-top: 200px;
     background-color: #F5F5F5;
 }
 
@@ -39,6 +39,36 @@
 
 .homepage-section-01-left{
     padding: 70px;
+}
+
+.homepage-section-01-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-1{
+    position: absolute;
+    right: 345px;
+    top: 140px;
+}
+
+.img-2{
+    position: absolute;
+    right: 462px;
+    top: 245px;
+}
+
+.img-3{
+    position: absolute;
+    right: 492px;
+    top: 448px;
+}
+
+.img-4{
+    position: absolute;
+    right: 0px;
+    top: 193px;
 }
 
 .tagline{
@@ -166,6 +196,7 @@ span{
     color: #5F72BE;
     height: 32px;
     width: 128px;
+    cursor: pointer;
 }
 
 .email{
@@ -204,7 +235,26 @@ span{
 
 .Section-03-right{
     flex: 2;
-    background-color: aqua;
+    display: flex;
+    padding-left: 200px;
+}
+
+.section-03-right-01,.section-03-right-02{
+    flex: 2;
+}
+
+.section-03-right-01{
+    background-color: #0D0D0D;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+
+.section-03-right-02{
+    background-color: #f90000;
+    width: 100%;
+    height: 600px;
+    margin: auto;
 }
 
 .enroll-02{
@@ -212,4 +262,52 @@ span{
     background-color: #F5F5F5;
     color: #5F72BE;
     width: 100%;
+    cursor: pointer;
+}
+
+.Carousel-02{
+    width: 100%;
+    height: 480px;
+    padding-top: 20px;
+}
+
+.container-02{
+    height: 480px;
+}
+
+.card-02{
+    width: 1000px;
+    height: fit-content;
+    margin: auto;
+}
+
+.image-02{
+    margin: auto;
+    width: fit-content;
+}
+
+.content-02{
+    width: 100%;
+    height: 332px;
+    width: 700px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-desc-02{
+    width: 700px;
+    height: 66px;
+}
+
+.name-02{
+    margin: auto;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.profession{
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
 }
